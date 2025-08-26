@@ -87,6 +87,537 @@
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
+            padding: 120px 20px 60px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            font-weight: 500;
+            opacity: 0.95;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            margin-bottom: 60px;
+        }
+        
+        .features {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .section-subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+        
+        .feature-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .philosophy {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .philosophy-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .philosophy-quote {
+            font-size: 28px;
+            font-weight: 300;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        
+        .philosophy-text {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .anti-metrics {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .comparison-column {
+            padding: 30px;
+            border-radius: 16px;
+        }
+        
+        .not-fork {
+            background: #fff5f5;
+            border: 2px solid #ffdddd;
+        }
+        
+        .yes-fork {
+            background: #f0f9ff;
+            border: 2px solid #bae6fd;
+        }
+        
+        .comparison-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .not-fork .comparison-title {
+            color: #dc2626;
+        }
+        
+        .yes-fork .comparison-title {
+            color: #0284c7;
+        }
+        
+        .comparison-list {
+            list-style: none;
+        }
+        
+        .comparison-list li {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+        
+        .privacy {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .privacy-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .price-note {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .app-store-button {
+            display: inline-block;
+            background: black;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .app-store-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+        }
+        
+        .copyright {
+            opacity: 0.6;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .tagline {
+                font-size: 20px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .nav-links a {
+                font-size: 14px;
+            }
+            
+            .nav-cta {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span>🍴</span>
+                <span>Fork</span>
+            </a>
+            <div class="nav-links">
+                <a href="mockups.html">See Demo</a>
+                <a href="#features">Features</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#" class="nav-cta">Coming Jan 2025</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">🍴</div>
+            <h1>Fork</h1>
+            <p class="tagline">Stick a fork in it—you're done scrolling</p>
+            <p class="subtitle">Break off the engagement</p>
+            <span class="coming-soon">Coming to iOS January 2025</span>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Redirect, Don't Restrict</h2>
+            <p class="section-subtitle">Like good parenting, Fork guides you toward better choices instead of just saying "no"</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Smart Redirects</h3>
+                    <p class="feature-description">When you hit your limits, Fork suggests personalized alternatives right in the notification. Choose what you'd rather be doing, not what you can't.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Your Alternatives</h3>
+                    <p class="feature-description">Define your own list of "things I'd rather be doing." Fork learns which alternatives work best for you at different times.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Simple Victories</h3>
+                    <p class="feature-description">See how long you stayed away after choosing an alternative. Celebrate the time reclaimed, not the time restricted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="anti-metrics">
+        <div class="container">
+            <h2 class="section-title">No Graphs. Just Growth.</h2>
+            <p class="section-subtitle">Fork refuses to shame you with endless metrics and charts</p>
+            
+            <div class="comparison">
+                <div class="comparison-column not-fork">
+                    <h3 class="comparison-title">❌ What Fork Won't Do</h3>
+                    <ul class="comparison-list">
+                        <li>📊 Detailed usage breakdowns</li>
+                        <li>📈 Anxiety-inducing graphs</li>
+                        <li>🔴 Red shame calendars</li>
+                        <li>📉 "37% worse than last week"</li>
+                        <li>😰 Screen pickup counts</li>
+                        <li>🎯 Performance metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-column yes-fork">
+                    <h3 class="comparison-title">✅ What Fork Will Do</h3>
+                    <ul class="comparison-list">
+                        <li>📝 Simple journal of choices</li>
+                        <li>⏱️ Total time reclaimed</li>
+                        <li>🔥 Longest victory streak</li>
+                        <li>🎉 Celebrate alternatives chosen</li>
+                        <li>💪 Focus on progress made</li>
+                        <li>🌱 Encourage growth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="philosophy">
+        <div class="philosophy-content">
+            <p class="philosophy-quote">"The best parents don't just say 'stop.' They redirect energy toward something better."</p>
+            <p class="philosophy-text">Fork applies this wisdom to your digital life. Instead of harsh blocks and restrictions, we offer gentle redirects toward the activities that align with who you want to be.</p>
+            <p class="philosophy-text">Because lasting change comes from choosing better, not from being blocked.</p>
+        </div>
+    </section>
+    
+    <section class="privacy" id="privacy">
+        <div class="container">
+            <span class="privacy-badge">🔒 Privacy First</span>
+            <h2 class="section-title">Fork doesn't want your data. Fork wants you to be human.</h2>
+            <p class="section-subtitle">We're not training a model. We're not selling insights. We're not even collecting analytics.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚫</div>
+                    <h3 class="feature-title">No AI Training</h3>
+                    <p class="feature-description">Your habits aren't feeding a machine learning model. Your choices aren't training an algorithm. Fork isn't getting "smarter"—you are.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">100% Local</h3>
+                    <p class="feature-description">Everything stays on your phone. No servers. No cloud. No database of user behaviors. When you delete Fork, every trace is gone.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🙈</div>
+                    <h3 class="feature-title">Can't See Your Apps</h3>
+                    <p class="feature-description">iOS gives us anonymous tokens, not app names. We literally can't tell if you're limiting Instagram or a meditation app. And we like it that way.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">No Analytics</h3>
+                    <p class="feature-description">No tracking pixels. No session recording. No crash reports with your data. We don't know how you use Fork, and that's the point.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">No Data Business</h3>
+                    <p class="feature-description">We make money from app purchases, not your data. No advertisers to please. No investors demanding "engagement metrics."</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3 class="feature-title">No Account Required</h3>
+                    <p class="feature-description">No email. No sign-up. No password. No profile. Download Fork and start using it. Delete it anytime. No strings attached.</p>
+                </div>
+            </div>
+            
+            <div style="max-width: 700px; margin: 60px auto 0; text-align: center;">
+                <p style="font-size: 20px; font-weight: 600; color: #333; margin-bottom: 16px;">The opposite of Big Tech:</p>
+                <p style="font-size: 18px; color: #666; line-height: 1.8;">While everyone else is racing to collect more data, train bigger models, and optimize for engagement, Fork is doing something radical: leaving you alone.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="cta-content">
+            <p class="price">$2.99</p>
+            <p class="price-note">One-time purchase. No subscriptions.</p>
+            <p class="price-note" style="margin-bottom: 40px;">The price of a coffee to change your digital habits.</p>
+            <a href="#" class="app-store-button">Coming January 2025</a>
+            <p style="margin-top: 30px; font-size: 16px; opacity: 0.9;">Get notified when Fork launches</p>
+            <p style="margin-top: 10px; font-size: 14px; opacity: 0.8;">iOS 17+ required • Family Controls entitlement pending</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="mailto:support@fork-app.app">Contact</a>
+        </div>
+        <p class="copyright">© 2024 Fork App. Stick a fork in it—you're done scrolling.</p>
+    </footer>
+</body>
+</html>            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+            padding: 15px 20px;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 1;
+        }
+        
+        .nav-cta {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             padding: 120px 20px 60px; /* Added top padding for fixed nav */
             text-align: center;
             min-height: 100vh;
