@@ -1,0 +1,23 @@
+# Basic SwiftLint configuration for Fork
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - todo
+  - force_cast
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+
+excluded:
+  - ${PWD}/Carthage
+  - ${PWD}/Pods
+  - ${PWD}/DerivedData
+
+file_length:
+  warning: 500
+  error: 1000
+
+identifier_name:
+  min_length: 2
+  max_length: 40
