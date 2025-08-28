@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Xcode
+Fork/*.xcodeproj/xcuserdata/
+Fork/*.xcodeproj/project.xcworkspace/xcuserdata/
+Fork/*.xcworkspace/xcuserdata/
+Fork/DerivedData/
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# Swift Package Manager
+Fork/.build/
+Fork/.swiftpm/
+
+# SwiftLint
+.swiftlint.yml.bak
+
+# Don't ignore docs (GitHub Pages)
+!docs/
