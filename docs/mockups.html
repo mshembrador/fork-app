@@ -201,7 +201,7 @@
                     </g>
                     <g transform="translate(225, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
-                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Alternatives</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
                     </g>
                     <g transform="translate(315, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
@@ -209,7 +209,7 @@
                     </g>
                 </svg>
                 <div class="description">
-                    Main dashboard shows all active limits with real-time progress. User-defined names (not app names). Displays chosen alternatives and "stayed away" time when limits are hit.
+                    Main dashboard shows all active limits with real-time progress. User-defined names (not app names). Displays chosen actions and "stayed away" time when limits are hit.
                 </div>
             </div>
             
@@ -366,13 +366,13 @@
             
         </div>
         
-        <!-- Alternatives Management Section -->
-        <h2 class="section-title">Alternatives Management</h2>
+        <!-- Choices Management Section -->
+        <h2 class="section-title">Choices Management</h2>
         <div class="mockup-grid">
             
-            <!-- Alternatives List -->
+            <!-- Choices List -->
             <div class="mockup-card">
-                <h3 class="mockup-title">Alternatives List</h3>
+                <h3 class="mockup-title">Choices List</h3>
                 <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
                     <!-- Phone Frame -->
                     <rect width="380" height="820" rx="40" fill="#000"/>
@@ -383,7 +383,7 @@
                     <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
                     
                     <text x="30" y="90" font-size="28" font-weight="700">Things I'd Rather Do</text>
-                    <text x="30" y="120" font-size="16" fill="#666">Your alternatives when limits hit</text>
+                    <text x="30" y="120" font-size="16" fill="#666">Your choices when limits hit</text>
                     
                     <!-- Add Button -->
                     <g transform="translate(320, 70)">
@@ -391,7 +391,7 @@
                         <text x="20" y="26" font-size="20" fill="white" text-anchor="middle">+</text>
                     </g>
                     
-                    <!-- Alternative Items -->
+                    <!-- Choice Items -->
                     <!-- Starred Item -->
                     <g transform="translate(20, 150)">
                         <rect width="340" height="70" rx="12" fill="#fff" stroke="#667eea" stroke-width="2"/>
@@ -405,13 +405,21 @@
                     <g transform="translate(20, 235)">
                         <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
                         <text x="15" y="35" font-size="16" font-weight="600">Read Atomic Habits Ch 3</text>
-                        <text x="15" y="55" font-size="14" fill="#666">✓ Completable • Evenings</text>
+                        <text x="15" y="55" font-size="14" fill="#666">✔ Completable • Evenings</text>
                         <rect x="270" y="20" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
                         <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
                     </g>
                     
-                    <!-- Ongoing Task -->
+                    <!-- Repeatable Task -->
                     <g transform="translate(20, 320)">
+                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
+                        <text x="15" y="35" font-size="16" font-weight="600">Call Mom</text>
+                        <text x="15" y="55" font-size="14" fill="#666">🔁 Once daily • Evenings</text>
+                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
+                    </g>
+                    
+                    <!-- Ongoing Task -->
+                    <g transform="translate(20, 405)">
                         <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
                         <text x="15" y="35" font-size="16" font-weight="600">Walk around the block</text>
                         <text x="15" y="55" font-size="14" fill="#666">🔄 Ongoing • Mornings</text>
@@ -419,19 +427,11 @@
                     </g>
                     
                     <!-- Completable with Checkbox -->
-                    <g transform="translate(20, 405)">
-                        <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
-                        <text x="15" y="35" font-size="16" font-weight="600">Call Mom about weekend</text>
-                        <text x="15" y="55" font-size="14" fill="#666">✓ Completable • Weekends</text>
-                        <rect x="270" y="20" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
-                        <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
-                    </g>
-                    
-                    <!-- Ongoing Task -->
                     <g transform="translate(20, 490)">
                         <rect width="340" height="70" rx="12" fill="#fff" stroke="#eee" stroke-width="1"/>
-                        <text x="15" y="35" font-size="16" font-weight="600">Practice guitar</text>
-                        <text x="15" y="55" font-size="14" fill="#666">🔄 Ongoing • Afternoons</text>
+                        <text x="15" y="35" font-size="16" font-weight="600">Finish project proposal</text>
+                        <text x="15" y="55" font-size="14" fill="#666">✔ Completable • Weekdays</text>
+                        <rect x="270" y="20" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
                         <text x="305" y="35" font-size="14" fill="#667eea">Edit</text>
                     </g>
                     
@@ -447,7 +447,7 @@
                     </g>
                     <g transform="translate(225, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
-                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Alternatives</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Choices</text>
                     </g>
                     <g transform="translate(315, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
@@ -455,13 +455,13 @@
                     </g>
                 </svg>
                 <div class="description">
-                    Shows all alternatives with visual indicators: ⭐ starred, 🔄 ongoing, ✓ completable. One-tap checkbox to mark tasks complete. Shows time windows for each alternative.
+                    Shows all choices with visual indicators: ⭐ starred, 🔄 ongoing, 🔁 repeatable (once daily), ✔ completable. One-tap checkbox to mark tasks complete. Shows time windows for each choice.
                 </div>
             </div>
             
-            <!-- Create Alternative -->
+            <!-- Create Choice -->
             <div class="mockup-card">
-                <h3 class="mockup-title">Create Alternative</h3>
+                <h3 class="mockup-title">Create Choice</h3>
                 <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
                     <!-- Phone Frame -->
                     <rect width="380" height="820" rx="40" fill="#000"/>
@@ -476,51 +476,69 @@
                     <text x="330" y="90" font-size="18" fill="#667eea" text-anchor="end">Save</text>
                     
                     <!-- Title -->
-                    <text x="190" y="140" font-size="24" font-weight="700" text-anchor="middle">New Alternative</text>
+                    <text x="190" y="140" font-size="24" font-weight="700" text-anchor="middle">New Choice</text>
                     
-                    <!-- Alternative Name -->
+                    <!-- Choice Name -->
                     <text x="40" y="190" font-size="16" font-weight="600">What would you rather do?</text>
                     <g transform="translate(40, 210)">
                         <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-                        <text x="15" y="32" font-size="16">Walk around the block</text>
+                        <text x="15" y="32" font-size="16">Call Mom</text>
                     </g>
                     
-                    <!-- Type Selection -->
+                    <!-- Type Selection - Now with 3 options -->
                     <text x="40" y="290" font-size="16" font-weight="600">Type</text>
+                    
+                    <!-- Ongoing -->
                     <g transform="translate(40, 310)">
-                        <rect width="145" height="50" rx="10" fill="#667eea"/>
-                        <text x="72" y="32" font-size="15" fill="white" text-anchor="middle">🔄 Ongoing</text>
+                        <rect width="95" height="60" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">🔄</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="#666">Always</text>
                     </g>
-                    <g transform="translate(195, 310)">
-                        <rect width="145" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
-                        <text x="72" y="32" font-size="15" text-anchor="middle">✓ Completable</text>
+                    
+                    <!-- Repeatable - Selected -->
+                    <g transform="translate(142, 310)">
+                        <rect width="95" height="60" rx="10" fill="#667eea"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">🔁</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="white">Once daily</text>
+                    </g>
+                    
+                    <!-- Completable -->
+                    <g transform="translate(245, 310)">
+                        <rect width="95" height="60" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                        <text x="47" y="30" font-size="20" text-anchor="middle">✔</text>
+                        <text x="47" y="50" font-size="11" text-anchor="middle" fill="#666">Until done</text>
+                    </g>
+                    
+                    <!-- Type Description -->
+                    <g transform="translate(40, 380)">
+                        <rect width="300" height="50" rx="10" fill="#f0f4ff"/>
+                        <text x="15" y="25" font-size="13" fill="#667eea">Won't show again today after selecting.</text>
+                        <text x="15" y="42" font-size="13" fill="#667eea">Resets tomorrow automatically.</text>
                     </g>
                     
                     <!-- Star Option -->
-                    <g transform="translate(40, 390)">
+                    <g transform="translate(40, 445)">
                         <rect width="300" height="60" rx="10" fill="#fff9e6" stroke="#ffeb99" stroke-width="1"/>
-                        <rect x="15" y="18" width="24" height="24" rx="4" fill="#667eea"/>
-                        <path d="M27 23 l2 2 l4 -5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
-                        <text x="50" y="35" font-size="16">⭐ Make this my go-to alternative</text>
+                        <rect x="15" y="18" width="24" height="24" rx="4" fill="none" stroke="#667eea" stroke-width="2"/>
+                        <text x="50" y="35" font-size="16">⭐ Make this my go-to choice</text>
                     </g>
                     
                     <!-- Time Window -->
-                    <text x="40" y="480" font-size="16" font-weight="600">When is this available? (optional)</text>
-                    <g transform="translate(40, 500)">
+                    <text x="40" y="535" font-size="16" font-weight="600">When is this available? (optional)</text>
+                    <g transform="translate(40, 555)">
                         <rect width="300" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
                         <text x="15" y="32" font-size="16">Anytime</text>
                         <text x="285" y="32" font-size="16" text-anchor="end">▼</text>
                     </g>
                     
-                    <!-- Dropdown Options (visual hint) -->
-                    <text x="55" y="570" font-size="13" fill="#999">• Mornings (6am-12pm)</text>
-                    <text x="55" y="590" font-size="13" fill="#999">• Afternoons (12pm-6pm)</text>
-                    <text x="55" y="610" font-size="13" fill="#999">• Evenings (6pm-11pm)</text>
-                    <text x="55" y="630" font-size="13" fill="#999">• Weekdays only</text>
-                    <text x="55" y="650" font-size="13" fill="#999">• Weekends only</text>
+                    <!-- Save Button -->
+                    <g transform="translate(40, 640)">
+                        <rect width="300" height="56" rx="28" fill="#667eea"/>
+                        <text x="150" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">Save Choice</text>
+                    </g>
                 </svg>
                 <div class="description">
-                    Create new alternatives with type selection (ongoing vs completable), optional star for go-to choice, and time window settings for smart rotation.
+                    Create new choices with THREE types: Ongoing (always available), Repeatable (once per day), or Completable (until marked done). Shows contextual description for selected type.
                 </div>
             </div>
             
@@ -551,7 +569,7 @@
                     </g>
                     <g transform="translate(190, 110)">
                         <rect width="170" height="40" rx="8" fill="#f8f9fa"/>
-                        <text x="85" y="26" font-size="15" fill="#666" text-anchor="middle">Completed ✓</text>
+                        <text x="85" y="26" font-size="15" fill="#666" text-anchor="middle">Completed ✔</text>
                     </g>
                     
                     <!-- Stats Summary -->
@@ -565,7 +583,7 @@
                             <text x="0" y="0" font-size="32" font-weight="700">2h 34m</text>
                             <text x="0" y="20" font-size="14" fill="#666">reclaimed</text>
                         </g>
-                        <text x="30" y="65" font-size="14" fill="#667eea">🔥 Longest victory: 1h 23m</text>
+                        <text x="30" y="65" font-size="14" fill="#667eea">Your record: 2h 15m. Every minute away is a win.</text>
                     </g>
                     
                     <!-- Journal Entries -->
@@ -617,7 +635,7 @@
                     </g>
                     <g transform="translate(225, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
-                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Alternatives</text>
+                        <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
                     </g>
                     <g transform="translate(315, 755)">
                         <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
@@ -625,7 +643,7 @@
                     </g>
                 </svg>
                 <div class="description">
-                    Two tabs: "Today's Choices" shows all fork victories with random positive emojis. "Completed" tab shows finished tasks with option to reactivate. Every choice celebrated equally.
+                    Two tabs: "Today's Choices" shows all fork victories with random positive emojis. "Completed" tab shows finished tasks with option to reactivate. Every choice celebrated equally. No pressure on records.
                 </div>
             </div>
             
@@ -642,45 +660,53 @@
                     <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
                     
                     <!-- Success Animation Circle -->
-                    <circle cx="190" cy="200" r="60" fill="#f0f4ff"/>
-                    <text x="190" y="215" font-size="48" text-anchor="middle">🎉</text>
+                    <circle cx="190" cy="160" r="60" fill="#f0f4ff"/>
+                    <text x="190" y="175" font-size="48" text-anchor="middle">🎉</text>
                     
                     <!-- Title -->
-                    <text x="190" y="300" font-size="32" font-weight="700" text-anchor="middle">Great Choice!</text>
+                    <text x="190" y="250" font-size="32" font-weight="700" text-anchor="middle">Great Choice!</text>
                     
                     <!-- Details Card -->
-                    <g transform="translate(40, 340)">
-                        <rect width="300" height="160" rx="16" fill="#f8f9fa"/>
+                    <g transform="translate(40, 290)">
+                        <rect width="300" height="140" rx="16" fill="#f8f9fa"/>
                         
                         <!-- Limit Info -->
-                        <text x="20" y="35" font-size="14" fill="#666">You spent</text>
-                        <text x="20" y="55" font-size="24" font-weight="600">30 minutes</text>
-                        <text x="20" y="75" font-size="14" fill="#666">on Social Media</text>
+                        <text x="20" y="30" font-size="14" fill="#666">You spent</text>
+                        <text x="20" y="50" font-size="24" font-weight="600">30 minutes</text>
+                        <text x="20" y="70" font-size="14" fill="#666">on Social Media</text>
                         
                         <!-- Choice Info -->
-                        <line x1="20" y1="95" x2="280" y2="95" stroke="#e5e5e7" stroke-width="1"/>
-                        <text x="20" y="120" font-size="14" fill="#666">You chose to</text>
-                        <text x="20" y="145" font-size="20" font-weight="600">Walk around the block 🚶</text>
+                        <line x1="20" y1="85" x2="280" y2="85" stroke="#e5e5e7" stroke-width="1"/>
+                        <text x="20" y="105" font-size="14" fill="#666">You chose</text>
+                        <text x="20" y="125" font-size="20" font-weight="600">Walk around the block 🚶</text>
+                    </g>
+                    
+                    <!-- Practical Tip -->
+                    <g transform="translate(40, 450)">
+                        <rect width="300" height="60" rx="12" fill="#f0f4ff"/>
+                        <text x="15" y="25" font-size="14" font-weight="600" fill="#667eea">💡 Pro tip:</text>
+                        <text x="15" y="42" font-size="13" fill="#666">Your place is saved in most apps. If something</text>
+                        <text x="15" y="56" font-size="13" fill="#666">really matters, screenshot it first.</text>
                     </g>
                     
                     <!-- Motivational Text -->
-                    <text x="190" y="540" font-size="16" fill="#667eea" text-anchor="middle">Your longest streak: 2h 15m</text>
-                    <text x="190" y="565" font-size="14" fill="#999" text-anchor="middle">Think you can beat it? 💪</text>
+                    <text x="190" y="540" font-size="16" fill="#667eea" text-anchor="middle">Your record: 2h 15m</text>
+                    <text x="190" y="565" font-size="14" fill="#999" text-anchor="middle">Every minute away is a win.</text>
                     
                     <!-- Action Button -->
-                    <g transform="translate(40, 600)">
+                    <g transform="translate(40, 590)">
                         <rect width="300" height="56" rx="28" fill="#667eea"/>
                         <text x="150" y="36" font-size="18" font-weight="600" fill="white" text-anchor="middle">Let's go! →</text>
                     </g>
                     
                     <!-- Mark Complete Option (if completable) -->
-                    <g transform="translate(40, 670)">
+                    <g transform="translate(40, 660)">
                         <rect width="300" height="44" rx="22" fill="none" stroke="#667eea" stroke-width="2"/>
-                        <text x="150" y="28" font-size="16" fill="#667eea" text-anchor="middle">Mark as complete ✓</text>
+                        <text x="150" y="28" font-size="16" fill="#667eea" text-anchor="middle">Mark as complete ✔</text>
                     </g>
                 </svg>
                 <div class="description">
-                    Positive reinforcement after choosing an alternative. Shows time spent on limit and choice made. "Let's go!" returns to home. Optional "Mark as complete" for completable tasks.
+                    Positive reinforcement after choosing. Shows practical tip to reduce anxiety about leaving apps. "Your record: 2h 15m. Every minute away is a win." No pressure to beat records.
                 </div>
             </div>
             
@@ -718,7 +744,7 @@
                         
                         <text x="58" y="48" font-size="15" font-weight="600">Social Media limit reached</text>
                         <text x="58" y="68" font-size="14" fill="#666">You've used 30 minutes. Swipe down for</text>
-                        <text x="58" y="84" font-size="14" fill="#666">alternatives.</text>
+                        <text x="58" y="84" font-size="14" fill="#666">your choices.</text>
                     </g>
                 </svg>
                 <div class="description">
@@ -792,17 +818,459 @@
                     </g>
                 </svg>
                 <div class="description">
-                    <strong>Actual iOS capabilities:</strong> Plain text buttons, no custom colors (except star emoji for starred item), vertical stack. One-tap alternatives without opening app.
+                    <strong>Actual iOS capabilities:</strong> Plain text buttons, no custom colors (except star emoji for starred item), vertical stack. One-tap choices without opening app.
                 </div>
             </div>
             
         </div>
         
+<!-- Settings Section -->
+<h2 class="section-title">Settings & Education</h2>
+<div class="mockup-grid">
+    
+    <!-- Main Settings Screen -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Settings - Main</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#f8f9fa"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="white"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Header -->
+            <text x="30" y="90" font-size="32" font-weight="700">Settings</text>
+            
+            <!-- Timing Section -->
+            <text x="30" y="135" font-size="13" font-weight="600" fill="#6c6c70">TIMING</text>
+            
+            <!-- Snooze Duration -->
+            <g transform="translate(20, 150)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">⏰</text>
+                <text x="50" y="25" font-size="17">Snooze Duration</text>
+                <text x="50" y="45" font-size="14" fill="#999">How long to pause limits</text>
+                <text x="320" y="35" font-size="16" fill="#667eea" text-anchor="end">5 min ›</text>
+            </g>
+            
+            <!-- Take a Break -->
+            <g transform="translate(20, 220)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">😴</text>
+                <text x="50" y="25" font-size="17">Take a Break from Fork</text>
+                <text x="50" y="45" font-size="14" fill="#999">Pause all limits temporarily</text>
+                <text x="320" y="35" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Grace Period -->
+            <g transform="translate(20, 290)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">✨</text>
+                <text x="50" y="25" font-size="17">Grace Period</text>
+                <text x="50" y="45" font-size="14" fill="#999">Free time after making a choice</text>
+                <text x="320" y="35" font-size="16" fill="#667eea" text-anchor="end">30 min ›</text>
+            </g>
+            
+            <!-- Progressive Snooze Toggle -->
+            <g transform="translate(20, 360)">
+                <rect width="340" height="60" rx="12" fill="white"/>
+                <text x="20" y="25" font-size="16">📉</text>
+                <text x="50" y="25" font-size="17">Progressive Snooze</text>
+                <text x="50" y="45" font-size="14" fill="#999">Snooze gets shorter each time</text>
+                <!-- Toggle Switch -->
+                <rect x="280" y="20" width="50" height="30" rx="15" fill="#e5e5e7"/>
+                <circle cx="295" cy="35" r="12" fill="white"/>
+            </g>
+            
+            <!-- Fork Philosophy Section -->
+            <text x="30" y="455" font-size="13" font-weight="600" fill="#6c6c70">FORK PHILOSOPHY</text>
+            
+            <!-- Using Fork Well -->
+            <g transform="translate(20, 470)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">💡</text>
+                <text x="50" y="30" font-size="17">Using Fork Well</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Behind the Curtain -->
+            <g transform="translate(20, 530)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">🎭</text>
+                <text x="50" y="30" font-size="17">Behind the Curtain</text>
+                <rect x="230" y="15" width="40" height="20" rx="10" fill="#ff3b30"/>
+                <text x="250" y="28" font-size="11" fill="white" text-anchor="middle">NEW</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Why Fork Works -->
+            <g transform="translate(20, 590)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">🧠</text>
+                <text x="50" y="30" font-size="17">Why Fork Works</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- About Section -->
+            <text x="30" y="675" font-size="13" font-weight="600" fill="#6c6c70">ABOUT</text>
+            
+            <!-- About -->
+            <g transform="translate(20, 690)">
+                <rect width="340" height="50" rx="12" fill="white"/>
+                <text x="20" y="30" font-size="16">ℹ️</text>
+                <text x="50" y="30" font-size="17">About Fork</text>
+                <text x="320" y="30" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Bottom Tab Bar -->
+            <rect x="10" y="740" width="360" height="70" fill="white"/>
+            <g transform="translate(45, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">🏠</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Home</text>
+            </g>
+            <g transform="translate(135, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">📊</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Journal</text>
+            </g>
+            <g transform="translate(225, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">🎯</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#999">Choices</text>
+            </g>
+            <g transform="translate(315, 755)">
+                <text x="0" y="25" font-size="24" text-anchor="middle">⚙️</text>
+                <text x="0" y="42" font-size="11" text-anchor="middle" fill="#667eea">Settings</text>
+            </g>
+        </svg>
+        <div class="description">
+            Main settings with timing controls all grouped together (including "Take a Break from Fork"), Fork philosophy section with educational content, and About section.
+        </div>
     </div>
     
-    <footer style="text-align: center; color: white; margin-top: 60px; padding: 20px;">
-        <p style="opacity: 0.9;">Fork doesn't want your data. Fork wants you to be human.</p>
-        <p style="opacity: 0.7; margin-top: 10px;">© 2024 Fork App</p>
-    </footer>
-</body>
-</html>
+    <!-- Behind the Curtain - Main Menu -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Behind the Curtain - Dark Patterns Menu</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Settings</text>
+            
+            <!-- Title -->
+            <text x="30" y="140" font-size="28" font-weight="700">Behind the Curtain</text>
+            <text x="30" y="170" font-size="16" fill="#666">How apps manipulate your attention</text>
+            
+            <!-- Warning Card -->
+            <g transform="translate(20, 200)">
+                <rect width="340" height="80" rx="12" fill="#fff0f0"/>
+                <text x="20" y="30" font-size="16">⚠️ Knowledge is power</text>
+                <text x="20" y="50" font-size="14" fill="#666">Understanding these tricks reduces their</text>
+                <text x="20" y="68" font-size="14" fill="#666">effectiveness. You can't unsee the matrix.</text>
+            </g>
+            
+            <!-- Section 1 -->
+            <g transform="translate(20, 300)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">🎰</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What Makes You Keep Scrolling</text>
+                <text x="20" y="55" font-size="14" fill="#666">Infinite scroll, pull-to-refresh, lost place</text>
+                <text x="20" y="73" font-size="14" fill="#666">anxiety, "someone is typing..."</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Section 2 -->
+            <g transform="translate(20, 420)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">🔴</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What Keeps You Coming Back</text>
+                <text x="20" y="55" font-size="14" fill="#666">Red badges, disappearing stories,</text>
+                <text x="20" y="73" font-size="14" fill="#666">streak counters, "you might like..."</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+            
+            <!-- Section 3 -->
+            <g transform="translate(20, 540)">
+                <rect width="340" height="100" rx="12" fill="white" stroke="#eee" stroke-width="1"/>
+                <text x="20" y="30" font-size="20">💰</text>
+                <text x="50" y="30" font-size="18" font-weight="600">What They Get Out of It</text>
+                <text x="20" y="55" font-size="14" fill="#666">Your attention = $30-60/quarter</text>
+                <text x="20" y="73" font-size="14" fill="#666">1,500+ data points collected daily</text>
+                <text x="320" y="50" font-size="17" fill="#c7c7cc" text-anchor="end">›</text>
+            </g>
+        </svg>
+        <div class="description">
+            Educational hub revealing dark patterns used by social media and apps. Three sections explaining manipulation tactics, organized by psychological impact and business model.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Keep Scrolling -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What Makes You Keep Scrolling</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What Makes You</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Keep Scrolling 🎰</text>
+            
+            <!-- Infinite Scroll -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">♾️ Infinite Scroll</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">No exit cues, like casinos without clocks</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Decision fatigue bypass</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Brain never gets the "done" signal</text>
+            </g>
+            
+            <!-- Pull to Refresh -->
+            <g transform="translate(20, 355)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">↓ Pull-to-Refresh</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Variable ratio reinforcement = slot machine</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Dopamine during the pull, not the result</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Same mechanism as gambling addiction</text>
+            </g>
+            
+            <!-- Lost Place Anxiety -->
+            <g transform="translate(20, 520)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">😰 Lost Place Anxiety</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Intentionally not saving scroll position</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">FOMO about "missing that perfect post"</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Loss aversion - losing feels 2x worse</text>
+            </g>
+        </svg>
+        <div class="description">
+            Deep dive into scrolling mechanics: infinite scroll removes stopping points, pull-to-refresh exploits gambling psychology, lost place anxiety creates FOMO. Each pattern explained with mechanism, trigger, and psychology.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Coming Back -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What Keeps You Coming Back</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What Keeps You</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Coming Back 🔴</text>
+            
+            <!-- Red Badges -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🔴 Red Notification Badges</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Hijacking evolutionary danger signals</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Cortisol spike, fight-or-flight response</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">200,000 years of evolution says red = threat</text>
+            </g>
+            
+            <!-- Disappearing Stories -->
+            <g transform="translate(20, 355)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">⏰ Stories That Disappear</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">24-hour timers creating artificial scarcity</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Urgency, FOMO, compulsive checking</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">Scarcity bias makes anything limited valuable</text>
+            </g>
+            
+            <!-- Streak Counters -->
+            <g transform="translate(20, 520)">
+                <rect width="340" height="150" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🔥 Streak Counters</text>
+                <text x="20" y="55" font-size="14" font-weight="600" fill="#667eea">What it is:</text>
+                <text x="20" y="73" font-size="13" fill="#333">Making you feel you'll "lose" progress</text>
+                <text x="20" y="95" font-size="14" font-weight="600" fill="#667eea">What it triggers:</text>
+                <text x="20" y="113" font-size="13" fill="#333">Sunk cost fallacy, turns apps into obligations</text>
+                <text x="20" y="133" font-size="14" font-weight="600" fill="#667eea">Why it works:</text>
+                <text x="20" y="151" font-size="13" fill="#333">You value what you've "invested" in</text>
+            </g>
+        </svg>
+        <div class="description">
+            Retention mechanics exposed: red badges trigger evolutionary threat response, disappearing content creates artificial urgency, streaks exploit sunk cost fallacy. Understanding = immunity.
+        </div>
+    </div>
+    
+    <!-- Behind the Curtain - Economics -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">What They Get Out of It</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Back</text>
+            
+            <!-- Title -->
+            <text x="30" y="130" font-size="24" font-weight="700">What They Get</text>
+            <text x="30" y="160" font-size="24" font-weight="700">Out of It 💰</text>
+            
+            <!-- Your Value Card -->
+            <g transform="translate(20, 190)">
+                <rect width="340" height="120" rx="12" fill="#fff0f0"/>
+                <text x="20" y="30" font-size="18" font-weight="600">📊 Your Attention Value</text>
+                <text x="20" y="55" font-size="20" font-weight="400">$30-60</text>
+                <text x="95" y="55" font-size="14" fill="#666">per quarter in ad revenue</text>
+                <text x="20" y="80" font-size="20" font-weight="400">$200-400</text>
+                <text x="120" y="80" font-size="14" fill="#666">per year from your 2.5 hours daily</text>
+                <text x="20" y="105" font-size="14" fill="#666">30 min scrolling ≈ $0.50 in someone's pocket</text>
+            </g>
+            
+            <!-- Data Collection -->
+            <g transform="translate(20, 330)">
+                <rect width="340" height="100" rx="12" fill="#f0f4ff"/>
+                <text x="20" y="30" font-size="18" font-weight="600">📱 Data Harvesting</text>
+                <text x="20" y="55" font-size="20" font-weight="400">1,500+</text>
+                <text x="85" y="55" font-size="14" fill="#666">behavioral data points per day</text>
+                <text x="20" y="80" font-size="14" fill="#666">Every scroll, tap, pause = more data to</text>
+                <text x="20" y="98" font-size="14" fill="#666">perfect the addiction algorithm</text>
+            </g>
+            
+            <!-- The Real Transaction -->
+            <g transform="translate(20, 450)">
+                <rect width="340" height="140" rx="12" fill="#f8f9fa"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🎯 The Real Transaction</text>
+                <text x="20" y="55" font-size="14" fill="#333">You're not the customer, you're the product</text>
+                <text x="20" y="77" font-size="14" fill="#333">Your anxiety = their engagement metrics</text>
+                <text x="20" y="99" font-size="14" fill="#333">Your FOMO = their quarterly growth</text>
+                <text x="20" y="121" font-size="14" fill="#333">Your "one more scroll" = their IPO valuation</text>
+            </g>
+            
+            <!-- Scale -->
+            <g transform="translate(20, 610)">
+                <rect width="340" height="80" rx="12" fill="#fff9e6"/>
+                <text x="20" y="30" font-size="18" font-weight="600">🌍 The Scale</text>
+                <text x="20" y="50" font-size="14" font-weight="700">3 billion users × $200/year =</text>
+                <text x="20" y="70" font-size="20" font-weight="700" fill="#ff6b6b">$600 billion industry</text>
+            </g>
+        </svg>
+        <div class="description">
+            The economics exposed: Your attention worth $30-60/quarter. Every 30 minutes = $0.50 revenue. 1,500+ data points collected daily. Your peace of mind is literally their business model.
+        </div>
+    </div>
+    
+    <!-- Take a Break Screen -->
+    <div class="mockup-card">
+        <h3 class="mockup-title">Take a Break from Fork</h3>
+        <svg class="phone-frame" viewBox="0 0 380 820" xmlns="http://www.w3.org/2000/svg">
+            <!-- Phone Frame -->
+            <rect width="380" height="820" rx="40" fill="#000"/>
+            <rect x="10" y="10" width="360" height="800" rx="35" fill="#fff"/>
+            
+            <!-- Status Bar -->
+            <rect x="10" y="10" width="360" height="44" rx="35" fill="#f8f9fa"/>
+            <text x="30" y="37" font-size="16" font-weight="600">9:41 AM</text>
+            
+            <!-- Navigation -->
+            <text x="30" y="90" font-size="18" fill="#667eea">‹ Settings</text>
+            
+            <!-- Title -->
+            <text x="30" y="140" font-size="28" font-weight="700">Take a Break</text>
+            <text x="30" y="170" font-size="16" fill="#666">Pause Fork temporarily</text>
+            
+            <!-- Info Card -->
+            <g transform="translate(20, 200)">
+                <rect width="340" height="80" rx="12" fill="#f0f4ff"/>
+                <text x="20" y="30" font-size="16">💡 Sometimes you need to focus</text>
+                <text x="20" y="50" font-size="14" fill="#666">Fork will pause all limits and notifications.</text>
+                <text x="20" y="68" font-size="14" fill="#666">We trust you to know what you need.</text>
+            </g>
+            
+            <!-- Duration Options -->
+            <text x="30" y="310" font-size="16" font-weight="600">How long?</text>
+            
+            <!-- 2 Hours -->
+            <g transform="translate(20, 330)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#667eea" stroke-width="2"/>
+                <circle cx="30" cy="35" r="10" fill="#667eea"/>
+                <circle cx="30" cy="35" r="4" fill="white"/>
+                <text x="55" y="30" font-size="18" font-weight="600">2 hours</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at 11:41 AM</text>
+            </g>
+            
+            <!-- Rest of Today -->
+            <g transform="translate(20, 415)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#ddd" stroke-width="1"/>
+                <circle cx="30" cy="35" r="10" fill="none" stroke="#ddd" stroke-width="2"/>
+                <text x="55" y="30" font-size="18" font-weight="600">Rest of today</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at midnight</text>
+            </g>
+            
+            <!-- Until Tomorrow -->
+            <g transform="translate(20, 500)">
+                <rect width="340" height="70" rx="12" fill="white" stroke="#ddd" stroke-width="1"/>
+                <circle cx="30" cy="35" r="10" fill="none" stroke="#ddd" stroke-width="2"/>
+                <text x="55" y="30" font-size="18" font-weight="600">Until tomorrow morning</text>
+                <text x="55" y="50" font-size="14" fill="#666">Back at 6:00 AM tomorrow</text>
+            </g>
+            
+            <!-- Optional Note -->
+            <text x="30" y="605" font-size="16" font-weight="600">Add a note (optional)</text>
+            <g transform="translate(20, 625)">
+                <rect width="340" height="50" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+                <text x="15" y="32" font-size="16" fill="#999">Deep work session...</text>
+            </g>
+            
+            <!-- Confirm Button -->
+            <g transform="translate(40, 700)">
+                <rect width="300" height="56" rx="28" fill="#667eea"/>
+                <text x="150" y="36" font-size="16" font-weight="600" fill="white" text-anchor="middle">Take a Break</text>
+            </g>
+        </svg>
+        <div class="description">
+            No judgment break system: 2 hours, rest of day, or until tomorrow. Optional journal note. Simple confirmation. Shows trust in user's self-knowledge about when they need uninterrupted time.
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+<footer style="text-align: center; color: white; margin-top: 60px; padding: 20px;">
+<p style="opacity: 0.9;">Fork doesn't want your data. Fork wants you to be human.</p>
+<p style="opacity: 0.7; margin-top: 10px;">© 2025 Fork App</p>
+</footer>
