@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philosophy - Fork App</title>
+    <meta name="description" content="Fork isn't about doing more. It's about choosing what matters to you over what an algorithm chose for you.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            font-weight: 500;
+            opacity: 0.95;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        
+        /* Navigation Pills */
+        .nav-pills {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .nav-pill {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            transition: background 0.2s;
+        }
+        
+        .nav-pill:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background: white;
+            padding: 80px 20px;
+        }
+        
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .narrow-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .section-subtitle {
+            font-size: 20px;
+            text-align: center;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .section-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Belief Boxes */
+        .beliefs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .belief-card {
+            padding: 40px;
+            border-radius: 16px;
+        }
+        
+        .belief-card.positive {
+            background: #f0f4ff;
+            border: 2px solid #e1e8ff;
+        }
+        
+        .belief-card.negative {
+            background: #fff5f5;
+            border: 2px solid #ffdddd;
+        }
+        
+        .belief-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        .belief-card.positive h3 {
+            color: #667eea;
+        }
+        
+        .belief-card.negative h3 {
+            color: #dc2626;
+        }
+        
+        .belief-card ul {
+            list-style: none;
+        }
+        
+        .belief-card li {
+            padding: 10px 0;
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+        
+        .belief-card li strong {
+            color: #1a1a1a;
+        }
+        
+        /* Choices Section */
+        .choices-showcase {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8f9fa 100%);
+            padding: 60px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+        
+        .choices-showcase h3 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+        
+        .choices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .choice-pill {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            color: #666;
+            border: 1px solid #e5e5e7;
+            transition: transform 0.2s;
+        }
+        
+        .choice-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .emphasis-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: #667eea;
+            margin-top: 30px;
+        }
+        
+        /* Principles Grid */
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .principle-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid #e5e5e7;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .principle-icon {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .principle-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+        }
+        
+        .principle-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Quote Sections */
+        .quote-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .quote-text {
+            font-size: 32px;
+            font-weight: 300;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+        
+        /* Impact Section */
+        .impact-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .impact-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .impact-list li {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .impact-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .cta h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+        }
+        
+        .copyright {
+            opacity: 0.6;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .tagline {
+                font-size: 20px;
+            }
+            
+            .beliefs-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote-text {
+                font-size: 24px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">🍴</div>
+            <h1>Our Philosophy</h1>
+            <p class="tagline">Fork isn't about doing more.</p>
+            <p class="subtitle">It's about choosing what matters to you over what an algorithm chose for you.</p>
+            <div class="nav-pills">
+                <a href="/" class="nav-pill">← Back to Home</a>
+                <a href="/mockups" class="nav-pill">See Demo</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What Fork Really Is -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">What Fork Really Is</h2>
+            <p class="section-text">Fork is about giving people their agency back. One choice at a time. One human moment at a time.</p>
+            <p class="section-text">In a world where billion-dollar companies optimize for engagement, Fork optimizes for <em>disengagement</em>. For choosing human moments. For deciding that calling your mom matters more than another scroll through curated content.</p>
+        </div>
+    </section>
+    
+    <!-- Beliefs -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">The Philosophy That Drives Everything</h2>
+            <div class="belief-card positive" style="max-width: 700px; margin: 0 auto;">
+                <h3>Fork Believes</h3>
+                <ul>
+                    <li><strong>Your time has value</strong> beyond ad revenue</li>
+                    <li><strong>8 minutes = 2 hours</strong> when it's meaningful to you</li>
+                    <li><strong>Connection beats productivity</strong> for human happiness</li>
+                    <li><strong>Progress beats perfection</strong> every single time</li>
+                    <li><strong>You already know what matters</strong> – Fork just helps you choose it</li>
+                    <li><strong>Small choices create big changes</strong> in how you spend your days</li>
+                    <li><strong>Being human is more important</strong> than being optimal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Choices That Matter -->
+    <section class="content-section">
+        <div class="container">
+            <div class="choices-showcase">
+                <h3>The Choices That Matter</h3>
+                <p style="margin-bottom: 30px; color: #666;">Sometimes what matters is:</p>
+                <div class="choices-grid">
+                    <div class="choice-pill">Calling your mom</div>
+                    <div class="choice-pill">Staring at clouds</div>
+                    <div class="choice-pill">Making that sandwich</div>
+                    <div class="choice-pill">Sitting with coffee</div>
+                    <div class="choice-pill">Petting your cat</div>
+                    <div class="choice-pill">Texting "thinking of you"</div>
+                    <div class="choice-pill">Dancing to one song</div>
+                    <div class="choice-pill">Watering that plant</div>
+                    <div class="choice-pill">Doing nothing (on purpose)</div>
+                </div>
+                <p class="emphasis-text">These aren't "productive." They're <em>human</em>.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Quote -->
+    <section class="quote-section">
+        <p class="quote-text">
+            "Every fork victory matters equally.<br>
+            Every choice to be human is a victory."
+        </p>
+    </section>
+    
+    <!-- Why This Matters -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Why Making This App Matters to Me</h2>
+            <p class="section-subtitle">Because every person who uses Fork is:</p>
+            <div class="impact-list">
+                <ul>
+                    <li><strong>Reclaiming their attention</strong> from algorithms designed to exploit them</li>
+                    <li><strong>Choosing connection</strong> over consumption</li>
+                    <li><strong>Defining their own values</strong> instead of accepting imposed metrics</li>
+                    <li><strong>Being kinder to themselves</strong> with small, achievable victories</li>
+                    <li><strong>Breaking the engagement cycle</strong> that profits from their distraction</li>
+                </ul>
+            </div>
+            <p class="section-text" style="text-align: center; margin-top: 40px; font-size: 20px;">
+                Even one person making one choice to call their mom instead of scrolling – that's a victory against the entire attention economy.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Impact -->
+    <section class="content-section">
+        <div class="narrow-container">
+            <h2 class="section-title">The Impact We Want</h2>
+            <p class="section-subtitle">If Fork helps even one person:</p>
+            <div class="impact-list">
+                <ul>
+                    <li>Choose to ask someone how their day was instead of scrolling</li>
+                    <li>Call their mom instead of reading rage-bait</li>
+                    <li>Take a walk instead of falling down a rabbit hole</li>
+                    <li>Sit with their coffee in peace instead of consuming content</li>
+                    <li>Feel good about 5 minutes away instead of ashamed about "only" 5 minutes</li>
+                </ul>
+            </div>
+            <p style="text-align: center; margin-top: 40px; font-size: 24px; font-weight: 600; color: #667eea;">
+                Then Fork has succeeded.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Final Quote -->
+    <section class="quote-section">
+        <p class="quote-text">
+            "We're not building a productivity app.<br>
+            We're building a choice app.<br>
+            A human moment app.<br>
+            An agency app."
+        </p>
+    </section>
+    
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Fork doesn't want your data.</h2>
+            <p>Fork wants you to be human.</p>
+            <a href="/" class="back-button">Back to Home</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/philosophy">Philosophy</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="mailto:support@fork-app.app">Contact</a>
+        </div>
+        <p class="copyright">© 2025 Fork App. Stick a fork in it—you're done scrolling.</p>
+    </footer>
+</body>
+</html>
